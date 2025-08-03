@@ -47,3 +47,16 @@
     rgba(72, 75, 88, 1) 93%
   );
 }
+
+#overlay-background.active {
+  display: none;
+}
+
+@media (width < 96rem) {
+  #overlay-background.active {
+    display: block;
+  }
+  #sidebar.active {
+    display: flex;
+  }
+}
