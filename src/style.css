@@ -1,0 +1,49 @@
+.custom-scroll-bar-verion-one {
+  scrollbar-width: thin;
+  scrollbar-color: #484b58 transparent;
+}
+
+.custom-scroll-bar-verion-one::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+.custom-scroll-bar-verion-one::-webkit-scrollbar-track {
+  background: transparent;
+  position: relative;
+}
+
+.custom-scroll-bar-verion-one::-webkit-scrollbar-thumb {
+  background-color: #484b58;
+  border-radius: 2px;
+  width: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide scrollbar buttons */
+.custom-scroll-bar-verion-one::-webkit-scrollbar-button,
+.custom-scroll-bar-verion-one::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-scroll-bar-bottom-gradient {
+  background: #242933;
+  background: linear-gradient(
+    180deg,
+    rgba(36, 41, 51, 0) 0%,
+    rgba(36, 41, 51, 1) 83%
+  );
+}
+
+.custom-scroll-bar-bottom-gradient-two {
+  background: #484b58;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 75, 88, 0) 0%,
+    rgba(72, 75, 88, 1) 93%
+  );
+}
