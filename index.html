@@ -28,6 +28,7 @@
         --color-phtp-blue: #1ba9f0;
         --color-phtp-overlay: rgba(0, 0, 0, 0.2);
         --color-phtp-yellow: #f3d94a;
+        --color-phtp-purple: #a358ff;
 
         --radius-phtp-large: 40px;
         --radius-phtp-big: 30px;
@@ -55,11 +56,32 @@
         --shadow-phtp-eye-icon-dropshadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.25);
         --shadow-phtp-dollar-icon-dropshadow: 0px 10px 10px 3px
           rgba(0, 0, 0, 0.25);
+        --shadow-phtp-banner-widget-dropshadow: -10px 0px 10px 4px
+          rgba(0, 0, 0, 0.4);
       }
     </style>
     <style></style>
   </head>
-  <body class="bg-phtp-dark font-urbanist h-svh w-full overflow-hidden">
+  <body
+    class="bg-phtp-dark font-urbanist relative h-svh w-full overflow-hidden"
+  >
+    <div
+      class="bg-phtp-purple shadow-phtp-banner-widget-dropshadow absolute top-[190px] right-[-46px] z-30 flex h-[18px] w-[109px] rotate-[-90deg] cursor-pointer items-center justify-center gap-[5px] rounded-t-[6px] text-[10px] leading-[10px] font-black tracking-[2px] text-white uppercase"
+    >
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.75 8.16667L1.75 11.6667C1.75 11.8214 1.81146 11.9697 1.92085 12.0791C2.03025 12.1885 2.17862 12.25 2.33333 12.25H5.83333C5.98804 12.25 6.13642 12.1885 6.24581 12.0791C6.35521 11.9697 6.41667 11.8214 6.41667 11.6667V8.16667C6.41667 8.01196 6.35521 7.86358 6.24581 7.75419C6.13642 7.64479 5.98804 7.58333 5.83333 7.58333H2.33333C2.17862 7.58333 2.03025 7.64479 1.92085 7.75419C1.81146 7.86358 1.75 8.01196 1.75 8.16667ZM5.25 8.75V11.0833H2.91667V8.75H5.25ZM7.58333 2.33333L7.58333 5.83333C7.58333 5.98804 7.64479 6.13642 7.75419 6.24581C7.86358 6.35521 8.01196 6.41667 8.16667 6.41667L11.6667 6.41667C11.8214 6.41667 11.9697 6.35521 12.0791 6.24581C12.1885 6.13642 12.25 5.98804 12.25 5.83333V2.33333C12.25 2.17862 12.1885 2.03025 12.0791 1.92085C11.9697 1.81146 11.8214 1.75 11.6667 1.75H8.16667C8.01196 1.75 7.86358 1.81146 7.75419 1.92085C7.64479 2.03025 7.58333 2.17862 7.58333 2.33333ZM11.0833 2.91667V5.25L8.75 5.25V2.91667H11.0833ZM1.75 4.08333C1.75 5.37017 2.7965 6.41667 4.08333 6.41667C5.37017 6.41667 6.41667 5.37017 6.41667 4.08333C6.41667 2.7965 5.37017 1.75 4.08333 1.75C2.7965 1.75 1.75 2.7965 1.75 4.08333ZM5.25 4.08333C5.25 4.72675 4.72675 5.25 4.08333 5.25C3.43992 5.25 2.91667 4.72675 2.91667 4.08333C2.91667 3.43992 3.43992 2.91667 4.08333 2.91667C4.72675 2.91667 5.25 3.43992 5.25 4.08333ZM7.58333 9.91667C7.58333 11.2035 8.62983 12.25 9.91667 12.25C11.2035 12.25 12.25 11.2035 12.25 9.91667C12.25 8.62983 11.2035 7.58333 9.91667 7.58333C8.62983 7.58333 7.58333 8.62983 7.58333 9.91667ZM11.0833 9.91667C11.0833 10.5601 10.5601 11.0833 9.91667 11.0833C9.27325 11.0833 8.75 10.5601 8.75 9.91667C8.75 9.27325 9.27325 8.75 9.91667 8.75C10.5601 8.75 11.0833 9.27325 11.0833 9.91667Z"
+          fill="white"
+        />
+      </svg>
+      Widgets
+    </div>
     <div id="app" class="gap-phtp-app-gap p-phtp-app-padding flex h-full">
       <!-- Sidebar -->
       <div
@@ -915,7 +937,7 @@
           <!-- Dashboard Center Panel -->
           <div
             id="dashboard-content-center-panel"
-            class="bg-phtp-blue-darker rounded-phtp-big flex flex-1 flex-col gap-[10px] overflow-hidden pb-[10px]"
+            class="bg-phtp-blue-darker rounded-phtp-big relative flex flex-1 flex-col gap-[10px] overflow-hidden pb-[10px]"
           >
             <!-- Dashboard search and tabs -->
             <div
@@ -12887,6 +12909,10 @@
               </div>
             </div>
             <!-- Dashboard List result -->
+            <div
+              id="scroll-bar-gradient "
+              class="custom-scroll-bar-bottom-gradient-two absolute bottom-0 left-0 z-10 h-[100px] w-full"
+            ></div>
           </div>
           <!-- Dashboard Center Panel -->
           <!-- Dashboard-right-panel -->
