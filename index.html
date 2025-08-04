@@ -44,7 +44,7 @@
 
         --padding-phtp-menu-button-padding: 15px 20px;
         --padding-phtp-widget-container-padding: 10px;
-        --padding-phtp-sidebar-widget-container-padding: 30px 10px 10px;
+        --padding-phtp-sidebar-widget-container-padding: 0px 3.5px 0px 10px;
         --padding-phtp-app-padding: 20px;
         --padding-phtp-pagination-carousel-padding: 1px 5px 2px;
 
@@ -103,17 +103,20 @@
       <!-- Sidebar -->
       <div
         id="sidebar"
-        class="bg-phtp-blue-darker 2xl:rounded-phtp-big rounded-0 max-w-phtp-max-width-sidebar fixed top-0 left-0 z-50 hidden h-full w-full flex-col gap-[20px] 2xl:relative 2xl:top-auto 2xl:left-auto 2xl:z-0 2xl:flex"
+        class="bg-phtp-blue-darker 2xl:rounded-phtp-big rounded-0 max-w-phtp-max-width-sidebar fixed top-0 left-0 z-50 hidden h-full w-full flex-col gap-[20px] pr-[3.5px] 2xl:relative 2xl:top-auto 2xl:left-auto 2xl:z-0 2xl:flex"
       >
         <!-- Company Logo -->
-        <div id="company-logo" class="flex justify-center px-[10px] pt-[30px]">
+        <div
+          id="company-logo"
+          class="flex justify-center pt-[30px] pr-[3.5px] pl-[10px]"
+        >
           <img src="/src/assets/logo.svg" alt="logo" />
         </div>
         <!-- Company Logo -->
         <!-- Sidebar Menus -->
         <div
           id="sidebar-menus"
-          class="gap-phtp-sidebar-menus-gap p-phtp-sidebar-widget-container-padding relative flex flex-1 flex-col overflow-hidden pt-[38px]"
+          class="custom-scrollbar-dark gap-phtp-sidebar-menus-gap p-phtp-sidebar-widget-container-padding relative mt-[38px] flex flex-1 flex-col overflow-y-scroll pr-[3.5px]"
         >
           <div
             class="bg-phtp-blue-gray rounded-phtp-small p-phtp-menu-button-padding hover:text-phtp-green hover:bg-phtp-blue-dark after:bg-phtp-overlay group relative flex min-h-[50px] w-full cursor-pointer gap-[10px] overflow-hidden fill-white text-sm font-bold tracking-[1px] text-white after:absolute after:top-0 after:left-0 after:z-0 after:hidden after:h-full after:w-full after:content-[''] hover:after:block"
@@ -452,7 +455,10 @@
         </div>
         <!-- Sidebar Menus -->
         <!-- Sidebar Footer -->
-        <div id="sidebar-footer" class="px-[10px] pt-[100px] pb-[10px]">
+        <div
+          id="sidebar-footer"
+          class="pt-[100px] pr-[6.5px] pb-[10px] pl-[10px]"
+        >
           <div
             class="bg-phtp-blue-gray rounded-phtp-small p-phtp-menu-button-padding hover:text-phtp-green hover:bg-phtp-blue-dark after:bg-phtp-overlay group relative flex w-full cursor-pointer gap-[10px] overflow-hidden fill-white text-sm font-bold tracking-[1px] text-white after:absolute after:top-0 after:left-0 after:z-0 after:hidden after:h-full after:w-full after:content-[''] hover:after:block"
           >
