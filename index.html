@@ -1193,12 +1193,12 @@
           <!-- Dashboard Center Panel -->
           <div
             id="dashboard-content-center-panel"
-            class="bg-phtp-blue-darker rounded-phtp-big relative flex h-[800px] flex-none flex-col gap-[10px] overflow-hidden pb-[10px] md:h-[500px] xl:h-auto xl:flex-1"
+            class="bg-phtp-blue-darker rounded-phtp-big relative flex h-[800px] flex-none flex-col gap-[10px] overflow-hidden pr-[3.5px] pb-[10px] md:h-[500px] xl:h-auto xl:flex-1"
           >
             <!-- Dashboard search and tabs -->
             <div
               id="dashboard-content-search-and-tabs"
-              class="flex flex-col gap-[12px] px-[10px] pt-[10px] md:flex-row"
+              class="flex flex-col gap-[12px] pt-[10px] pr-[6.5px] pl-[10px] md:flex-row"
             >
               <div class="flex flex-1 flex-col gap-[12px] lg:flex-row">
                 <div class="flex flex-wrap gap-[4px] md:flex-nowrap">
@@ -1278,7 +1278,7 @@
                   </div>
                 </div>
               </div>
-              <div class="">
+              <div>
                 <div
                   class="bg-phtp-green rounded-phtp-big hover:bg-phtp-green flex h-[40px] w-[195px] cursor-pointer items-center justify-center gap-[5px] text-[14px] leading-[24px] font-semibold text-white hover:text-white"
                 >
@@ -1304,7 +1304,7 @@
             </div>
             <!-- Dashboard search and tabs -->
             <!-- Dashboard filters -->
-            <div class="flex gap-[5px] px-[10px]">
+            <div class="flex gap-[5px] pr-[6.5px] pl-[10px]">
               <div class="smalldevice:flex-none flex-1">
                 <div
                   class="bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[40px] w-auto flex-1 cursor-pointer items-center gap-[16px] overflow-hidden rounded-[20px] pr-[16.29px] pl-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] md:w-[300px]"
@@ -1437,7 +1437,7 @@
             <!-- Dashboard filters -->
             <!-- Dashboard List result -->
             <div
-              class="flex w-full flex-1 flex-col gap-[5px] overflow-hidden px-[10px]"
+              class="custom-scrollbar-dark flex w-full flex-1 flex-col gap-[5px] overflow-y-scroll pr-[3.5px] pl-[10px]"
             >
               <div
                 class="bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[50px] min-h-[50px] w-full items-center gap-[16px] overflow-hidden rounded-[15px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-['']"
@@ -13608,10 +13608,11 @@
             >
               <!-- Panel One -->
               <div
-                class="rounded-phtp-medium bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[300px] w-full flex-col overflow-hidden pb-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] lg:w-[calc(50%-2.5px)] xl:h-auto xl:w-auto xl:flex-1"
+                id="right-panel-one"
+                class="rounded-phtp-medium bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[300px] w-full flex-col overflow-hidden pr-[3.5px] pb-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] lg:w-[calc(50%-2.5px)] xl:h-auto xl:w-auto xl:flex-1"
               >
                 <div
-                  class="relative z-10 flex items-center px-[10px] pt-[10px]"
+                  class="relative z-10 flex items-center pt-[10px] pr-[6.5px] pl-[10px]"
                 >
                   <div
                     class="flex-1 text-[16px] leading-[18px] font-bold text-white"
@@ -13638,7 +13639,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-10 flex flex-col gap-[5px] overflow-hidden px-[10px] pt-[10px]"
+                  class="custom-scrollbar-light relative z-10 flex flex-col gap-[5px] overflow-y-scroll pt-[10px] pr-[3.5px] pl-[10px]"
                 >
                   <div
                     class="rounded-phtp-small bg-phtp-blue-darker flex w-full items-center gap-[5px] p-[6px]"
@@ -14378,10 +14379,11 @@
               <!-- Panel One -->
               <!-- Panel Two -->
               <div
-                class="rounded-phtp-medium bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[300px] w-full flex-col overflow-hidden pb-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] lg:w-[calc(50%-2.5px)] xl:h-auto xl:w-auto xl:flex-1"
+                id="right-panel-two"
+                class="rounded-phtp-medium bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[300px] w-full flex-col overflow-hidden pr-[3.5px] pb-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] lg:w-[calc(50%-2.5px)] xl:h-auto xl:w-auto xl:flex-1"
               >
                 <div
-                  class="relative z-10 flex items-center px-[10px] pt-[10px]"
+                  class="relative z-10 flex items-center pt-[10px] pr-[6.5px] pl-[10px]"
                 >
                   <div
                     class="flex-1 text-[16px] leading-[18px] font-bold text-white"
@@ -14448,7 +14450,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-10 flex flex-col gap-[13px] overflow-hidden p-[10px]"
+                  class="custom-scrollbar-light relative z-10 flex flex-col gap-[13px] overflow-y-scroll pt-[10px] pr-[3.5px] pl-[10px]"
                 >
                   <div
                     class="bg-phtp-blue-darker rounded-phtp-small relative flex w-full items-center justify-between py-[2px] pr-[6px] pl-[5px]"
@@ -15913,10 +15915,11 @@
               <!-- Panel Two -->
               <!-- Panel Three -->
               <div
-                class="rounded-phtp-medium bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[300px] w-full flex-col overflow-hidden pb-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] xl:h-auto xl:w-auto xl:flex-1"
+                id="right-panel-three"
+                class="rounded-phtp-medium bg-phtp-blue-dark after:bg-phtp-overlay relative flex h-[300px] w-full flex-col overflow-hidden pr-[3.5px] pb-[10px] after:absolute after:top-0 after:left-0 after:z-0 after:h-full after:w-full after:content-[''] xl:h-auto xl:w-auto xl:flex-1"
               >
                 <div
-                  class="relative z-10 flex items-center px-[10px] pt-[10px]"
+                  class="relative z-10 flex items-center pt-[10px] pr-[6.5px] pl-[10px]"
                 >
                   <div
                     class="flex-1 text-[16px] leading-[18px] font-bold text-white"
@@ -15959,7 +15962,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-10 flex h-32 flex-1 flex-col gap-[13px] overflow-hidden p-[10px]"
+                  class="custom-scrollbar-light relative z-10 flex h-32 flex-1 flex-col gap-[13px] overflow-y-scroll pt-[10px] pr-[3.5px] pl-[10px]"
                 >
                   <div
                     class="bg-phtp-blue-darker rounded-phtp-small relative flex w-full items-center justify-between py-[6px] pr-[5px] pl-[9px]"

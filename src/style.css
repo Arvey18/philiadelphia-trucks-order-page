@@ -1,30 +1,52 @@
-.custom-scroll-bar-verion-one {
-  scrollbar-width: thin;
-  scrollbar-color: #484b58 transparent;
-}
-
-.custom-scroll-bar-verion-one::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+.custom-scrollbar-light::-webkit-scrollbar {
+  width: 3px;
   background: transparent;
+  padding-right: 5px;
+  overflow: visible;
 }
 
-.custom-scroll-bar-verion-one::-webkit-scrollbar-track {
+.custom-scrollbar-light::-webkit-scrollbar-track {
   background: transparent;
   position: relative;
 }
 
-.custom-scroll-bar-verion-one::-webkit-scrollbar-thumb {
+.custom-scrollbar-light::-webkit-scrollbar-thumb {
   background-color: #484b58;
-  border-radius: 2px;
-  width: 3px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 /* Hide scrollbar buttons */
-.custom-scroll-bar-verion-one::-webkit-scrollbar-button,
-.custom-scroll-bar-verion-one::-webkit-scrollbar-button:single-button {
+.custom-scrollbar-light::-webkit-scrollbar-button,
+.custom-scrollbar-light::-webkit-scrollbar-button:single-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar {
+  width: 3px;
+  background: transparent;
+  padding-right: 5px;
+  overflow: visible;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-track {
+  background: transparent;
+  position: relative;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: #2a2f3b;
+  border-radius: 100px;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* Hide scrollbar buttons */
+.custom-scrollbar-dark::-webkit-scrollbar-button,
+.custom-scrollbar-dark::-webkit-scrollbar-button:single-button {
   display: none;
   width: 0;
   height: 0;
